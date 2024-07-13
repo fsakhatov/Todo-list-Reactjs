@@ -3,12 +3,17 @@
     {
       "id": "1",
       "item": "Bread",
-      "checked": false
+      "checked": true
     },
     {
       "id": "2",
       "item": "Milk",
-      "checked": true
+      "checked": false
+    },
+    {
+      "id": "3",
+      "item": "Eat",
+      "checked": false
     }
   ]
 }

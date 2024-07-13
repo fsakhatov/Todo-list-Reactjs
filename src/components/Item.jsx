@@ -1,6 +1,6 @@
 import { FaTrashAlt } from "react-icons/fa";
 
-const LineItem = ({ item }) => {
+const Item = ({ item, handleDelete }) => {
   return (
     <li className='item'>
       <input type='checkbox' />
@@ -11,7 +11,7 @@ const LineItem = ({ item }) => {
         {item.item}
       </label>
       <FaTrashAlt
-        onClick={() => {}}
+        onClick={ () => handleDelete(item.id)}
         role='button'
         tabIndex='0'
         aria-label={`Delete ${item.item}`}
@@ -20,4 +20,4 @@ const LineItem = ({ item }) => {
   );
 };
 
-export default LineItem;
+export default Item;
